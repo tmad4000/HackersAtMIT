@@ -1,5 +1,15 @@
-$(window).load(function(){
 
+$(function() {
+
+  // $('.nav a').click(function(e) {
+  //   e.preventDefault();
+  //   $('.pages').hide();
+  //   $($(this).attr('href')).show();
+  //   return false;
+  // })
+
+})
+$(window).load(function(){
 
 
   
