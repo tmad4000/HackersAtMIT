@@ -6,21 +6,33 @@ $(function() {
   //   $('.pages').hide();
   //   $($(this).attr('href')).show();
   //   return false;
+  // // })
+
+  // var parts = location.hostname.split('.');
+  // var subdomain = parts.shift();
+  // $('.pages').hide();
+  // $('.pages #' + subdomain+"pg").show();
+
+
+  // $('.nav a').click(function(e) {
+  //   e.preventDefault();
+  //   $('.pages').hide();
+  //   $($(this).attr('href')).show();
+  //   return false;
   // })
-
 })
-$(window).load(function(){
+// $(window).load(function(){
 
 
   
-  $("#email, #emailhome").keypress(function(e){
-    if(e.which === 13) {
-      sendEmail();
-    }
-  });
-  $("#mailinglist, #mailinglisthome").click(sendEmail);
+//   $("#email, #emailhome").keypress(function(e){
+//     if(e.which === 13) {
+//       sendEmail();
+//     }
+//   });
+//   $("#mailinglist, #mailinglisthome").click(sendEmail);
   
-});
+// });
 
 function sendEmail(){
   var email = $("#email").val() || $("#emailhome").val();
